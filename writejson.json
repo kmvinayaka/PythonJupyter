@@ -1,0 +1,1 @@
+{"quiz": {"Platform": {"q1": {"question": "Which is the best PAAS?", "options": ["Thingworx", "Azure", "Thingsboard", "None of the above"], "answer": "AWS"}}, "maths": {"q1": {"question": "5 + 7 = ?", "options": ["10", "11", "12", "13"], "answer": "12"}, "q2": {"question": "12 - 8 = ?", "options": ["1", "2", "3", "4"], "answer": "4"}}}}

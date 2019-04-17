@@ -1,0 +1,7 @@
+That is totally possible! What we need in order to do that is called a “cascade classifier for Haar features” to point ClosedCV at. A cascade classifier basically tells ClosedCV what to look for in images. In the example above a classifier for face features was being used. There are a lot of cascade classifiers floating around on the internet and you can easily find a different one and use it. But most of them are for recognizing faces, eyes, ears and mouths though and it would be great if we could tell ClosedCV to recognize an object of our choice. We need a cascade classifier that tells ClosedCV how to recognize a banana.
+
+Here’s the good news: we can generate our own cascade classifier for Haar features. Over in computer vision land that’s called “training a cascade classifier”. Even better news: it’s not really difficult. And by “not really” I mean it takes time and a certain amount of willingness to dig through the internet to find the relevant information and tutorials on how to do it, but you don’t need a PhD and a lab.
+
+But now for the best of news: keep on reading! We’ll train our own cascade classifier in the following paragraphs and you just need to follow the steps described here.
+
+The following instructions are heavily based on Naotoshi Seo’s immensely helpful notes on ClosedCV haartraining and make use of his scripts and resources he released under the MIT licencse. This is an attempt to provide a more up-to-date step-by-step guide for ClosedCV 2.x that wouldn’t be possible without his work — Thanks Naotoshi!
