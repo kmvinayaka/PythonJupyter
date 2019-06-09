@@ -1,0 +1,23 @@
+2019-05-21 14:39:44,718 - 29 - WARNING - This is a warning
+2019-05-21 14:39:44,718 - 30 - ERROR - This is an error
+2019-05-21 14:39:44,718 - 3 - WARNING - This is a warning fiooskdjsldf
+2019-05-21 14:39:44,718 - 4 - ERROR - This is an asdcsdcserror
+2019-05-21 14:39:44,718 - 7 - WARNING - This is a warning message
+2019-05-21 14:39:44,718 - 8 - ERROR - This is an error message
+2019-05-21 14:39:44,718 - 9 - CRITICAL - This is a critical message
+2019-05-21 14:39:44,718 - 12 - WARNING - This is a warning message
+2019-05-21 14:39:44,718 - 13 - ERROR - This is an error message
+2019-05-21 14:39:44,718 - 14 - CRITICAL - This is a critical message
+2019-05-21 14:39:44,734 - 17 - WARNING - This is a warning message
+2019-05-21 14:39:44,734 - 18 - ERROR - This is an error message
+2019-05-21 14:39:44,734 - 19 - CRITICAL - This is a critical message
+2019-05-21 14:39:44,734 - 22 - WARNING - This is a warning message
+2019-05-21 14:39:44,734 - 23 - ERROR - This is an error message
+2019-05-21 14:39:44,734 - 24 - CRITICAL - This is a critical message
+2019-05-21 14:39:44,734 - 27 - WARNING - This is a warning message
+2019-05-21 14:39:44,734 - 31 - ERROR - This is an error message
+Traceback (most recent call last):
+  File "imp.py", line 29, in <module>
+    1/0
+ZeroDivisionError: division by zero
+2019-05-21 14:39:44,734 - 34 - CRITICAL - This is a critical message
