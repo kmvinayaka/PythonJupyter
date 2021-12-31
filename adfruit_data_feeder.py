@@ -1,7 +1,6 @@
 import os
 import time
 import sys
-#import Adafruit_DHT as dht
 import paho.mqtt.client as mqtt
 import json
 import random
@@ -33,22 +32,13 @@ try:
 
         battery = psutil.sensors_battery()
         cpu_details = psutil.cpu_freq()
-
-        # payload["Battery_percentage"] = battery.percent
-        # payload["Battery_secs_left"] = battery.secsleft if str(battery.secsleft).isdigit() else "Charging"
-        # payload["Power_plugged"] = battery.power_plugged
-        # payload["cpu_details"] = cpu_details.current
-        # payload["cpu_max"] = cpu_details.max
-        # payload["cpu_min"] = cpu_details.min
-        # print(payload)
-
         # Sending humidity and temperature data to ADAFRUIT_HOST
-        client.publish('vinayakaswamy123/feeds/battery_percentage',battery.percent)
-        client.publish('vinayakaswamy123/feeds/cpu_current',cpu_details.current)
-        client.publish('vinayakaswamy123/feeds/Battery_secs_left', battery.secsleft if str(battery.secsleft).isdigit() else "Charging")
-        client.publish('vinayakaswamy123/feeds/Power_plugged', battery.power_plugged)
-        client.publish('vinayakaswamy123/feeds/cpu_max', cpu_details.max)
-        client.publish('vinayakaswamy123/feeds/cpu_min', cpu_details.min)
+        client.publish(f'{USER_NAME}/feeds/battery_percentage',battery.percent)
+        client.publish(f'{USER_NAME}/feeds/cpu_current',cpu_details.current)
+        client.publish(f'{USER_NAME}/feeds/Battery_secs_left', battery.secsleft if str(battery.secsleft).isdigit() else "Charging")
+        client.publish(f'{USER_NAME}/feeds/Power_plugged', battery.power_plugged)
+        client.publish(f'{USER_NAME}/feeds/cpu_max', cpu_details.max)
+        client.publish(f'{USER_NAME}/feeds/cpu_min', cpu_details.min)
 
         next_reading += INTERVAL
         sleep_time = next_reading-time.time()
