@@ -9,7 +9,7 @@ def getweather():
 
 	url = "https://api.openweathermap.org/data/2.5/weather"
 
-	querystring = {"lat":"12.97","lon":"77.59","appid":"6d24a38de70af446667aa5ce084e6428"}
+	querystring = {"lat":"12.97","lon":"77.59","appid":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}
 
 	headers = {
 		'cache-control': "no-cache",
